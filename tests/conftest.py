@@ -3,8 +3,7 @@ import pytest
 from amazon.utils import attach
 from dotenv import load_dotenv
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options as ChromeOptions
-from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.chrome.options import Options
 from selene.support.shared import browser
 
 
@@ -15,12 +14,12 @@ def pytest_addoption(parser):
         choices=['chrome', 'firefox'],
         default='chrome'
     )
-    parser.addoption(
-        '--browser_version',
-        help='Specify desired browser version',
-        choices=['100.0', 'Somemore'], # add more option later
-        default='100.0'
-    )
+    # parser.addoption(
+    #     '--browser_version',
+    #     help='Specify desired browser version',
+    #     choices=['100.0', 'Somemore'],
+    #     default='100.0'
+    # )
 
 
 @pytest.fixture(scope='session', autouse=True)
@@ -31,17 +30,12 @@ def load_env():
 @pytest.fixture(scope='function', autouse=True)
 def browser_management(request):
     browser_name = request.config.getoption('--browser')
-    browser_version = request.config.getoption('--browser_version')
-    options = ChromeOptions
-
-    if browser_name == 'chrome':
-        options = ChromeOptions
-    elif browser_name == 'firefox':
-        options = FirefoxOptions
+    # browser_version = request.config.getoption('--browser_version')
+    options = Options()
 
     selenoid_capabilities = {
         "browserName": browser_name,
-        "browserVersion": str(browser_version),
+        "browserVersion": "100.0",
         "selenoid:options": {
             "enableVNC": True,
             "enableVideo": True

@@ -19,4 +19,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-addopts = "--alluredir=allure-results --clean-alluredir"
+addopts = "--alluredir=tests/allure-results --clean-alluredir"
