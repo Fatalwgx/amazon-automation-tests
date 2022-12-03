@@ -53,7 +53,7 @@ def browser_management(request):
     )
     browser.config.driver = driver
 
-    browser.config.base_url = 'https://www.amazon.com/'
+    browser.config.base_url = 'https://www.amazon.com'
     browser.config.window_height = '1080'
     browser.config.window_width = '1920'
     browser.config.timeout = 6.0
