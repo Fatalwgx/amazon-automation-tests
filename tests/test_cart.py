@@ -75,7 +75,7 @@ def test_add_book_to_cart_happy_path():
 
     with allure.step('Opening cart page'):
         (
-            app.product_page
+            app.base_page
             .go_to_cart()
         )
 
