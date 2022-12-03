@@ -32,32 +32,32 @@ def load_env():
 def browser_management(request):
     browser_name = request.config.getoption('--browser')
     browser_version = request.config.getoption('--browser_version')
-    # options = ChromeOptions
-    #
-    # if browser_name == 'chrome':
-    #     options = ChromeOptions
-    # elif browser_name == 'firefox':
-    #     options = FirefoxOptions
-    #
-    # selenoid_capabilities = {
-    #     "browserName": browser_name,
-    #     "browserVersion": str(browser_version),
-    #     "selenoid:options": {
-    #         "enableVNC": True,
-    #         "enableVideo": True
-    #     }
-    # }
-    #
-    # options.capabilities.update(selenoid_capabilities)
-    #
-    # login = os.getenv('LOGIN')
-    # password = os.getenv('PASSWORD')
-    #
-    # driver = webdriver.Remote(
-    #     command_executor=f'https://{login}:{password}@selenoid.autotests.cloud/wd/hub',
-    #     options=options
-    # )
-    # browser.config.driver = driver
+    options = ChromeOptions
+
+    if browser_name == 'chrome':
+        options = ChromeOptions
+    elif browser_name == 'firefox':
+        options = FirefoxOptions
+
+    selenoid_capabilities = {
+        "browserName": browser_name,
+        "browserVersion": str(browser_version),
+        "selenoid:options": {
+            "enableVNC": True,
+            "enableVideo": True
+        }
+    }
+
+    options.capabilities.update(selenoid_capabilities)
+
+    login = os.getenv('LOGIN')
+    password = os.getenv('PASSWORD')
+
+    driver = webdriver.Remote(
+        command_executor=f'https://{login}:{password}@selenoid.autotests.cloud/wd/hub',
+        options=options
+    )
+    browser.config.driver = driver
 
     browser.config.base_url = 'https://www.amazon.com/'
     browser.config.window_height = '1080'
