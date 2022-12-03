@@ -23,7 +23,7 @@ def test_add_book_to_cart_happy_path():
     with allure.step('Opening front page'):
         (
             app.front_page
-            .open('/')
+            .open()
             # register should be implemented, but skipped due to certain restrictions
             # .authorize_user(
             #     email=test_user.email,
