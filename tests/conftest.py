@@ -1,10 +1,12 @@
 import os
 import pytest
-from amazon.utils import attach
+
 from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selene.support.shared import browser
+
+from amazon import app
 
 
 def pytest_addoption(parser):
@@ -60,7 +62,14 @@ def browser_management(request):
 
     yield
 
-    attach.add_html(browser)
-    attach.add_screenshot(browser)
-    attach.add_logs(browser)
-    attach.add_video(browser)
+    (
+        app.attach
+        .add_html()
+        .add_screenshot()
+        .add_logs()
+        .add_video()
+    )
+    # attach.add_html(browser)
+    # attach.add_screenshot(browser)
+    # attach.add_logs(browser)
+    # attach.add_video(browser)
