@@ -7,10 +7,11 @@ from amazon.model.pages.base_page import BasePage
 
 class ProductPage:
     def __init__(self):
-        self.add_to_cart_button = browser.element("input[id^='add-to-cart-button']")
+        self.add_to_cart_button = ...
 
     def add_to_cart(self):
+        self.add_to_cart_button = browser.element("input[id^='add-to-cart-button']")
         command.js.scroll_into_view(self.add_to_cart_button)
         self.add_to_cart_button.click()
-        browser.element('#sw-subtotal-item-count').should(be.visible)
+        browser.element('#sw-subtotal-item-count').with_(timeout=6).should(be.visible)
         return self

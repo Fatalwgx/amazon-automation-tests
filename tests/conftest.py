@@ -55,7 +55,7 @@ def browser_management(request):
     )
     browser.config.driver = driver
 
-    browser.config.base_url = 'https://www.amazon.com'
+    browser.config.base_url = 'https://www.amazon.com/'
     browser.config.window_height = '1080'
     browser.config.window_width = '1920'
     browser.config.timeout = 6.0
@@ -64,12 +64,9 @@ def browser_management(request):
 
     (
         app.attach
-        .add_html()
-        .add_screenshot()
-        .add_logs()
-        .add_video()
+        .add_html(browser)
+        .add_screenshot(browser)
+        .add_logs(browser)
+        .add_video(browser)
     )
-    # attach.add_html(browser)
-    # attach.add_screenshot(browser)
-    # attach.add_logs(browser)
-    # attach.add_video(browser)
+    browser.quit()

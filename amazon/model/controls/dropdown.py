@@ -10,6 +10,7 @@ class DropDown:
         self.element = element
 
     def select(self, elements, option):
+        time.sleep(1)
         browser.element('.a-popover-inner').should(be.visible)
         browser.element(".a-dropdown-container").should(be.clickable)
         browser.element(".a-dropdown-container").click()
