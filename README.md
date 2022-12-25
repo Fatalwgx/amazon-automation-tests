@@ -19,7 +19,7 @@
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/selene.png" title="Selene" width="50" height="50"  alt="selene"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/selenoid.svg" title="selenoid" width="50" height="50"  alt="selenoid"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/jenkins.svg" title="Jenkins" width="50" height="50"  alt="jenkins"/>
-    <img src="https://github.com/Fatalwgx/README/blob/master/blob/master/icons/allure.svg" title="Allure" width="50" height="50"  alt="allure"/>
+    <img src="https://github.com/Fatalwgx/README/blob/master/icons/allure.svg" title="Allure" width="50" height="50"  alt="allure"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/testops.svg" title="Testops" width="50" height="50"  alt="testops"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/github.svg" title="Github" width="50" height="50"  alt="github"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/telegram.svg" title="Telegram" width="50" height="50"  alt="telegram"/>
@@ -43,13 +43,13 @@ This project is supposed is also meant to perform API and mobile testing, but th
 
 
 &#8287;&#8287;&#8287;&#8287;&#8287;
-## <img src="https://github.com/Fatalwgx/README/blob/master/icons/jenkins.svg" width="50" height="50"  alt="jenkins"/> Running tests using Jenkins [Jenkins]()
+## <img src="https://github.com/Fatalwgx/README/blob/master/icons/jenkins.svg" width="50" height="50"  alt="jenkins"/> Running tests using Jenkins
   
-  Setting up Jenkins
+  Setting up Jenkins:
 
-  <details><summary>1. To be filled</summary>
+  <details><summary>1. To be filled.</summary>
   <p align="center">
-    <img src="https://github.com/Fatalwgx/README/blob/master/jenkins.png" alt="jenkins"/>
+    <div>Right now the job is set-up on a non-public server, instructions on job setup process will be added at a later date.</div>
   </p>
   </details>
   
@@ -84,15 +84,8 @@ poetry run pytest tests/
 Test results are generated as Allure reports and are attached to a ran Jenkins job(Integration with Allure Testops and Jira is intended, but not yet implemented)
 For each test html-document, screenshot, video and browser logs are attached.
   <p align="center">
-<<<<<<< HEAD
     <img src="https://github.com/Fatalwgx/README/blob/master/report1.png" height="150" alt="allure"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/report2.png" height="150" alt="allure"/>
-=======
-    <img src="/README/report1.png" height="150" alt="allure"/>
-    <img src="/README/report2.png" height="150" alt="allure"/>
-    https://user-images.githubusercontent.com/98048609/209472904-630c2211-5e9e-4e9d-b0e3-5398e634e480.mp4
->>>>>>> ad974d80e2800613bac100963b390ae2ed75c7d9
-  </p>
   
   
 https://user-images.githubusercontent.com/98048609/209472904-630c2211-5e9e-4e9d-b0e3-5398e634e480.mp4
@@ -101,11 +94,9 @@ https://user-images.githubusercontent.com/98048609/209472904-630c2211-5e9e-4e9d-
 &#8287;&#8287;&#8287;&#8287;&#8287;
 ### <img src="https://github.com/Fatalwgx/README/blob/master/icons/telegram.svg" width="50" height="50"  alt="telegram"/> Telegram
 
-Notification about test results is sent via team messenger. In this case using telegram
+Test results are additionally sent as a notfication via chat messenger of choice or email. In this case - Telegram
 
-<<<<<<< HEAD
+
 <img src="https://github.com/Fatalwgx/README/blob/master/notification.png" height="250" alt="notify"/>
-=======
-<img src="/README/notification.png" height="250" alt="notify"/>
->>>>>>> ad974d80e2800613bac100963b390ae2ed75c7d9
+
   
