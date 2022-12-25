@@ -1,4 +1,4 @@
-<h1 align="center">Web UI aotuomation project of <a href="https://www.amazon.com" target="_blank"><img src="/README/icons/amazon_icon.png" alt="Logo"/></a></h1>
+<h1 align="center">Web UI aotuomation project of <a href="https://www.amazon.com" target="_blank"><img src="/README/icons/amazon_icon.png" width="100" height="100" alt="Logo"/></a></h1>
 
 &#8287;&#8287;&#8287;&#8287;&#8287;
 ## :open_book: Summary:
@@ -87,6 +87,7 @@ For each test html-document, screenshot, video and browser logs are attached.
     <img src="/README/report1.png" height="150" alt="allure"/>
     <img src="/README/report2.png" height="150" alt="allure"/>
     <img src="/README/report_video.mp4" height="150" alt="allure"/>
+    <video width="150" height="150" controls autoplay><source src="/README/report_video.mp4" type='video/mp4'></video>
   </p>
   
   
@@ -95,5 +96,5 @@ For each test html-document, screenshot, video and browser logs are attached.
 
 Notification about test results is sent via team messenger. In this case using telegram
 
-<img src="/README/notidication.png" height="250" alt="notify"/>
+<img src="/README/notification.png" height="250" alt="notify"/>
   
