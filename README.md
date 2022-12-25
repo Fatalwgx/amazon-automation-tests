@@ -84,8 +84,14 @@ poetry run pytest tests/
 Test results are generated as Allure reports and are attached to a ran Jenkins job(Integration with Allure Testops and Jira is intended, but not yet implemented)
 For each test html-document, screenshot, video and browser logs are attached.
   <p align="center">
+<<<<<<< HEAD
     <img src="https://github.com/Fatalwgx/README/blob/master/report1.png" height="150" alt="allure"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/report2.png" height="150" alt="allure"/>
+=======
+    <img src="/README/report1.png" height="150" alt="allure"/>
+    <img src="/README/report2.png" height="150" alt="allure"/>
+    https://user-images.githubusercontent.com/98048609/209472904-630c2211-5e9e-4e9d-b0e3-5398e634e480.mp4
+>>>>>>> ad974d80e2800613bac100963b390ae2ed75c7d9
   </p>
   
   
@@ -97,5 +103,9 @@ https://user-images.githubusercontent.com/98048609/209472904-630c2211-5e9e-4e9d-
 
 Notification about test results is sent via team messenger. In this case using telegram
 
+<<<<<<< HEAD
 <img src="https://github.com/Fatalwgx/README/blob/master/notification.png" height="250" alt="notify"/>
+=======
+<img src="/README/notification.png" height="250" alt="notify"/>
+>>>>>>> ad974d80e2800613bac100963b390ae2ed75c7d9
   
