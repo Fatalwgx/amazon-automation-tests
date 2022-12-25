@@ -12,7 +12,7 @@
 
 &#8287;&#8287;&#8287;&#8287;&#8287;
 ## :gear: Technologies and Tools used in the project
-  <p align="center">
+  <p align="left">
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/python.svg" title="Python" width="50" height="50"  alt="python"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/pycharm.svg" title="Pycharm" width="50" height="50"  alt="pycharm"/>
     <img src="https://github.com/Fatalwgx/README/blob/master/icons/pytest.svg" title="Pytest" width="50" height="50"  alt="pytest"/>
