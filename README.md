@@ -86,8 +86,7 @@ For each test html-document, screenshot, video and browser logs are attached.
   <p align="center">
     <img src="/README/report1.png" height="150" alt="allure"/>
     <img src="/README/report2.png" height="150" alt="allure"/>
-    <img src="/README/report_video.mp4" height="150" alt="allure"/>
-    <video width="150" height="150" controls autoplay><source src="/README/report_video.mp4" type='video/mp4'></video>
+    https://user-images.githubusercontent.com/98048609/209472904-630c2211-5e9e-4e9d-b0e3-5398e634e480.mp4
   </p>
   
   
